@@ -68,8 +68,8 @@ O projeto está estruturado em duas etapas obrigatórias, e a tarefa bônus, tam
 
 ## Data de Entrega
 
-  - Serão `X` dias de projeto.
-  - Data de entrega para avaliação final do projeto: `DD/MM/YYYY - 14:00h`.
+  - Serão `1` dias de projeto.
+  - Data de entrega para avaliação final do projeto: `14/03/2022 14:00`.
 
 ---
 
@@ -79,9 +79,9 @@ O projeto está estruturado em duas etapas obrigatórias, e a tarefa bônus, tam
 
 1. Clone o repositório
 
-- `git clone git@github.com:tryber/sd-0x-restaurant-orders.git`.
+- `git clone git@github.com:tryber/sd-011-restaurant-orders.git`.
 - Entre na pasta do repositório que você acabou de clonar:
-  - `sd-0x-restaurant-orders`
+  - `sd-011-restaurant-orders`
 
 2. Crie o ambiente virtual para o projeto
 
@@ -120,7 +120,7 @@ O projeto está estruturado em duas etapas obrigatórias, e a tarefa bônus, tam
 
 7. Crie um novo `Pull Request` _(PR)_
 
-- Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-0x-restaurant-orders/pulls)
+- Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-011-restaurant-orders/pulls)
 - Clique no botão verde _"New pull request"_
 - Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
 - Clique no botão verde _"Create pull request"_
@@ -476,7 +476,7 @@ Para **"entregar"** seu projeto, siga os passos a seguir:
 * Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas
   * No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**
   * No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**
-  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-0x`
+  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-011`
 
 Se ainda houver alguma dúvida sobre como entregar seu projeto, [aqui tem um video explicativo](https://vimeo.com/362189205).
 
