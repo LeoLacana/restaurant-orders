@@ -295,9 +295,8 @@ No arquivo `track_orders.py`, implemente a classe `TrackOrders`, contendo, **no 
 
 ```python
 class TrackOrders:
-    # aqui deve expor a quantidade de estoque 
     def __len__(self):
-      pass
+        pass
 
     def add_new_order(self, costumer, order, day):
         pass
@@ -305,10 +304,10 @@ class TrackOrders:
     def get_most_ordered_dish_per_costumer(self, costumer):
         pass
 
-    def get_dish_quantity_per_costumer(self, costumer, order):
+    def get_never_ordered_per_costumer(self, costumer):
         pass
 
-    def get_never_ordered_per_costumer(self, costumer):
+    def get_days_never_visited_per_costumer(self, costumer):
         pass
 
     def get_busiest_day(self):
