@@ -264,9 +264,9 @@ A campanha de marketing foi um sucesso! A gerência agora deseja um sistema que 
 
 - Prato favorito por cliente;
 
-- Quanto de cada prato cada cliente já pediu;
-
 - Pratos nunca pedidos por cada cliente;
+
+- Dias nunca visitados por cada cliente;
 
 - Dia mais movimentado;
 
