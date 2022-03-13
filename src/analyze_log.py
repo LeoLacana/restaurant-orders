@@ -11,6 +11,8 @@ def readFile(path_to_file):
             raise FileNotFoundError
 
 # Qual o prato mais pedido por 'maria'?
+
+
 def most_requested_dish(file):
     food = dict()
     for client_name, food_name, _ in file:
@@ -18,6 +20,8 @@ def most_requested_dish(file):
     return food['maria']
 
 # Quantas vezes 'arnaldo' pediu 'hamburguer'?
+
+
 def number_of_times_requested(file):
     quantity = []
     for request in file:
@@ -27,6 +31,8 @@ def number_of_times_requested(file):
     return len(quantity)
 
 # Quais pratos 'joao' nunca pediu?
+
+
 def unordered_dishes(file):
     all_food = set()
     for _, food_name, _ in file:
@@ -41,6 +47,8 @@ def unordered_dishes(file):
     return unordered_dishes
 
 # Quais dias 'joao' nunca foi na lanchonete?
+
+
 def days_not_frequented(file):
     all_days = set()
     for _, _, days in file:
@@ -53,6 +61,7 @@ def days_not_frequented(file):
 
     days_not_frequented = all_days - days_frequented
     return days_not_frequented
+
 
 def analyze_log(path_to_file):
     file = readFile(path_to_file)
