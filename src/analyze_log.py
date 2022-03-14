@@ -13,34 +13,34 @@ def readFile(path_to_file):
 # Qual o prato mais pedido por 'maria'?
 
 
-def most_requested_dish(file):
+def most_requested_dish(file, name):
     food = dict()
     for client_name, food_name, _ in file:
         food[client_name] = food_name
-    return food['maria']
+    return food[name]
 
 # Quantas vezes 'arnaldo' pediu 'hamburguer'?
 
 
-def number_of_times_requested(file):
+def number_of_times_requested(file, name, dish):
     quantity = []
     for request in file:
-        if request[0] == 'arnaldo':
-            if request[1] == 'hamburguer':
+        if request[0] == name:
+            if request[1] == dish:
                 quantity.append(request)
     return len(quantity)
 
 # Quais pratos 'joao' nunca pediu?
 
 
-def unordered_dishes(file):
+def unordered_dishes(file, name):
     all_food = set()
     for _, food_name, _ in file:
         all_food.add(food_name)
 
     ordered_dishes = set()
     for order in file:
-        if 'joao' in order:
+        if name in order:
             ordered_dishes.add(order[1])
 
     unordered_dishes = all_food - ordered_dishes
@@ -49,14 +49,14 @@ def unordered_dishes(file):
 # Quais dias 'joao' nunca foi na lanchonete?
 
 
-def days_not_frequented(file):
+def days_not_frequented(file, name):
     all_days = set()
     for _, _, days in file:
         all_days.add(days)
 
     days_frequented = set()
     for order in file:
-        if 'joao' in order:
+        if name in order:
             days_frequented.add(order[2])
 
     days_not_frequented = all_days - days_frequented
@@ -65,10 +65,10 @@ def days_not_frequented(file):
 
 def analyze_log(path_to_file):
     file = readFile(path_to_file)
-    maria = most_requested_dish(file)
-    arnaldo = number_of_times_requested(file)
-    joao = unordered_dishes(file)
-    days_joao = days_not_frequented(file)
+    maria = most_requested_dish(file, 'maria')
+    arnaldo = number_of_times_requested(file, 'arnaldo', 'hamburguer')
+    joao = unordered_dishes(file, 'joao')
+    days_joao = days_not_frequented(file, 'joao')
     with open("data/mkt_campaign.txt", "w") as file:
         file.write(
             f"{maria}\n"
